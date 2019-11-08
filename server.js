@@ -14,7 +14,7 @@ server.use("/api/tasks", taskRouter);
 server.use("/api/resources", resourceRouter);
 
 server.get("/", (req, res) => {
-	return res.send("<h1>Recipe Book</h1>");
+	return res.send("<h1>DB Challenge Sprint</h1>");
 });
 
 module.exports = server;
