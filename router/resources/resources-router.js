@@ -39,3 +39,5 @@ router.post("/", (req, res) => {
 			res.status(500).json({ message: "could not process request" });
 		});
 });
+
+module.exports = router;
