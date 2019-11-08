@@ -6,7 +6,7 @@ exports.seed = function(knex) {
 				{
 					name: "Cook breakfast",
 					description: "Cook bacon, eggs and toast",
-					completed: false
+					completed: true
 				},
 				{
 					name: "Make cornhole board",
