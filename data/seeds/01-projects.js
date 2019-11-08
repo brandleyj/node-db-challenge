@@ -1,13 +1,23 @@
-
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('table_name').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
-      ]);
-    });
+	return knex("projects")
+		.truncate()
+		.then(function() {
+			return knex("projects").insert([
+				{
+					name: "Cook breakfast",
+					description: "Cook bacon, eggs and toast",
+					completed: false
+				},
+				{
+					name: "Make cornhole board",
+					description: "Make a board from scratch",
+					completed: false
+				},
+				{
+					name: "Build a computer",
+					description: "Buy parts and put together",
+					completed: false
+				}
+			]);
+		});
 };
